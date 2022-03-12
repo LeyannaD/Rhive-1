@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color:  rgb(121, 81, 41) ;
+}
+
+h1 { 
+  font-family: Copperplate Gothic Light;
+}
+
+nav {
+  background-color: #4C3926;
+}
+
+nav a {
+  display:inline-block;
+  color: white;
+  padding: 8px;
+  width: 200px;
+  font-family: combria;
+}
+
+nav a:active{
+  background-color:blueviolet;
+  color:lightpink;
+}
+
+main{
+  font-family: Baskerville;
+  font-size: 20px;
+  text-align: center;
+}
+
+header#header_home {
+   background-image: url(https://images.pexels.com/photos/4831/hands-coffee-smartphone-technology.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-size:cover;
+  padding:100px;
+}
+
+h2{
+  font-family:LucidaGrande;
+}
+
+ul{
+  list-style-type: square;
+  list-style-position:inside; 
+}
+
+
+.checked {
+  color: orange;
+}
+
+
+
+p{
+  font-family:georgia;
+  }
+
+.flex-container {
+  border: 1px;
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: row wrap;
+}
+
+.flex-item {
+  border: 1px;
+  margin: 0 1em;
+  padding: 0.25em;
+  width: 300px;
+  text-align: center;
+}
+
+.img-container {
+  display: flex;
+  width: 250px;
+  height: 250px;
+  justify-content: center;
+}
+
+.main{
+  width:100%;
+  min-height:380px;
+  text-align: center;
+  /* position: relative; */
+  position: absolute;
+  cursor:pointer;
+}
+
+.service{
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  position:absolute;
+  bottom: 0;
+  z-index: 1;
+}
+.service-logo{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: -90px auto 0;
+  background: white;
+  border: 18px solid  rgb(121, 81, 41);
+}
+
+
+.service-logo img{
+  width: 50px;
+  margin-top: 20px;
+}
+
+.service h4{
+  height: 35px;
+  width: 80%;
+  background: white;
+  margin: 50px auto;
+  position: relative;
+}
+
+  
+
+ .flex-item:hover img {
+transform: scale(1.5);
+ } 
+
+.main:hover .service{
+  transform: translateY(-50px);
+}
+
+ /* @media screen and (min-width: 650px) {
+ .column img {  
+ min-width: 650px;
+ max-width:800px:
+}
+
+@media screen and (min-width: 992px) {
+.column {
+ width: 30%;
+ margin: 0.5em;
+ min-height: 554px;
+}  */
+
+
+
+
+/* .service::after{
+  content: '';
+  width: 40px;
+  height: 30px;
+  background: linear-gradient(to right, white, rgb(121,81,41))
+  position: absolute;
+  right:-5px;
+  top: -5px;
+  z-index: -1;
+}
+
+.service::before{
+  content: '';
+  width: 40px;
+  height: 30px;
+  background: linear-gradient(to right, rgb(121,81,41), white);
+  position: absolute;
+  right:-5px;
+  bottom: -5px;
+  z-index: -1;
+} */
